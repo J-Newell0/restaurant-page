@@ -1,4 +1,15 @@
+/* .menu-item{ 
+    display: flex;
+    max-width: 20%;
+    max-height: 20%;
+}
+
+.food-img {
+    height: 100px;
+    width: 100px;
+} */
+
 img {
-    max-height: 25%;
-    max-width: 25%;
+    height: 100px;
+    width: 100px;
 }

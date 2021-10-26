@@ -4,12 +4,19 @@
   "description": "My favorite resturant homepage",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack"
   },
   "author": "Josh Newell",
   "license": "ISC",
   "devDependencies": {
+    "css-loader": "^6.4.0",
+    "file-loader": "^6.2.0",
+    "style-loader": "^3.3.1",
     "webpack": "^5.57.1",
     "webpack-cli": "^4.8.0"
+  },
+  "dependencies": {
+    "watch": "^0.13.0"
   }
 }

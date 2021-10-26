@@ -1,11 +1,13 @@
 // Index.js will be the initial page load script
 // 
+import './assets/styles/index.css';
 
 function createHeader(id, text) {
     const header = document.createElement('header');
     header.setAttribute('id', id);
     const logo = document.createElement('h1');
     logo.textContent = text;
+    header.classList.add('header');
     header.appendChild(logo);
     return header;
 }
@@ -47,6 +49,7 @@ function createFooter(id, text){
     footer.setAttribute('id', id);
     const h3 = document.createElement('h3');
     h3.textContent = text;
+    h3.classList.add('footer');
     footer.appendChild(h3);
     return footer;
 }
@@ -55,12 +58,12 @@ function createFooter(id, text){
 function loadHome() {
     // naming content wrapper
     const content = document.getElementById('content');
-    // Header load
-    const header = createHeader('header', 'Tres Tacos!');
-    content.appendChild(header);
     //  navagation load
     const nav = createNavBar('nav');
     content.appendChild(nav);
+    // Header load
+    const header = createHeader('header', 'Tres Tacos!');
+    content.appendChild(header);
     // load pages-content
     const pageContent = createMain('page-content');
     content.appendChild(pageContent);
@@ -69,4 +72,4 @@ function loadHome() {
     content.appendChild(footer);    
 }
 
-export default loadHome;
+export default loadHome();
