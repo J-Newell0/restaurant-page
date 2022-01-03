@@ -1,8 +1,9 @@
-// import './index.js';
+
+import './assets/styles/home.css';
+import loadMenu from './menu';
+
 
 function createHome() {
-    // const pageContent = document.getElementById('tab-content');
-   
     const homePage = document.createElement('div');
     homePage.classList.add('tabcontent')
 
@@ -15,18 +16,20 @@ function createHome() {
     const p = document.createElement('p');
     p.textContent = "Delicious Tacos handmade for your enjoyment!";
 
-    const order = document.createElement('a');
+    const chefImg = document.createElement('img');
+    chefImg.src = '';
+    chefImg.alt = '';
+
+    const order = document.createElement('button');
     order.textContent = 'Order Online';
-    // order.setAttribute('data-tab-target="#menu"');
     order.classList.add('order-online');
+    order.addEventListener('click', loadMenu);
 
     hero.appendChild(h1);
     hero.appendChild(p);
     hero.appendChild(order);
 
     homePage.appendChild(hero);
-
-    // pageContent.appendChild(homePage);
     
     return homePage;
 }

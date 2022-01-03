@@ -14,6 +14,7 @@ function createHeader(id, text) {
     
     const restName = document.createElement('h1');
     restName.textContent = text;
+    restName.classList.add('restaurant-name');
     
     const logo = document.createElement('img');
     logo.src = tacoLogo;
@@ -40,7 +41,6 @@ function createNavBar(id) {
     nav.setAttribute('id', id);
 
     const homeBtn = makeBtns('homeTab', 'Home');
-    // homeBtn.classList.add('active');
     homeBtn.addEventListener('click', (e) => {
         if (e.target.classList.contains('active')) return;
         setActiveButton(homeBtn);
@@ -119,7 +119,10 @@ function loadIndex() {
     content.appendChild(pageContent);
     // personal footer
     const footer = createFooter();
-    content.appendChild(footer);    
+    content.appendChild(footer);   
+
+    document.getElementById('homeTab').click();
+    
 }
 
 export default loadIndex();

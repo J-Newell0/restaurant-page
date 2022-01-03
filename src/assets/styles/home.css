@@ -1,0 +1,27 @@
+h1 {
+    padding-bottom: 2px;
+    margin-bottom: auto;
+}
+
+.hero {
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 34vw;
+    padding-bottom: 0.5vw;
+
+    background-color: rgba(87, 85, 80, 1);
+
+}
+
+
+.order-online{
+    background-color: #ffd70096;
+    border: 1px solid #ffd70096;
+    border-radius: 10px;
+    margin: 3px;
+    padding: 10px; 
+
+    cursor: pointer;
+}

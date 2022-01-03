@@ -5,6 +5,7 @@ import spicyTacos from "./assets/imgs/menuitems/spicytacos.jpg";
 import theFullPlate from "./assets/imgs/menuitems/tacoriceandbeans.jpg";
 
 import './assets/styles/menu.css';
+import './assets/styles/index.css';
 // import './index.js';
 
 
